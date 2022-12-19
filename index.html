@@ -4,12 +4,12 @@
     @import url(https://fonts.googleapis.com/css?family=Montserrat:100i,200,300,400,500,600,700);
     @import url(https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900);
 
-    body {
+    /* body {
         display: block;
         width: max-content;
         height: 100%;
         overflow-y: scroll;
-    }
+    } */
 
     .cover {
         display: flex;
@@ -22,7 +22,7 @@
         min-height: 300px;
         overflow-y: scroll;
         position: fixed;
-        top: 50%;
+        top: 5%;
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
         -ms-transition: all .5s ease;
@@ -32,11 +32,11 @@
         z-index: 10000;
 
         opacity: 1;
-        -webkit-transform: translateX(-50%) translateY(-30%) scale(1.2);
-        -moz-transform: translateX(-50%) translateY(-30%) scale(1.2);
-        -ms-transform: translateX(-50%) translateY(-30%) scale(1.2);
-        -o-transform: translateX(-50%) translateY(-30%) scale(1.2);
-        transform: translateX(-50%) translateY(-30%) scale(1.2);
+        -webkit-transform: translateX(-50%) translateY(8%) scale(1.2);
+        -moz-transform: translateX(-50%) translateY(8%) scale(1.2);
+        -ms-transform: translateX(-50%) translateY(8%) scale(1.2);
+        -o-transform: translateX(-50%) translateY(8%) scale(1.2);
+        transform: translateX(-50%) translateY(8%) scale(1.2);
 
 
     }
@@ -45,13 +45,13 @@ and (max-device-width: 667px)
 /* and (-webkit-min-device-pixel-ratio: 2) */
 and (orientation: portrait) {
  .cover {
-    -webkit-transform: translateX(-50%) translateY(-20%) scale(1.2);
-    -moz-transform: translateX(-50%) translateY(-20%) scale(1.2);
-    -ms-transform: translateX(-50%) translateY(-20%) scale(1.2);
-    -o-transform: translateX(-50%) translateY(-20%) scale(1.2);
-    transform: translateX(-50%) translateY(-20%) scale(1.2);
+    -webkit-transform: translateX(-50%) translateY(0%) scale(0.9);
+    -moz-transform: translateX(-50%) translateY(0%) scale(0.9);
+    -ms-transform: translateX(-50%) translateY(0%) scale(0.9);
+    -o-transform: translateX(-50%) translateY(0%) scale(0.9);
+    transform: translateX(-50%) translateY(0%) scale(0.9);
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1em;
     overflow-y: scroll;
  }
 }
@@ -157,7 +157,7 @@ and (orientation: portrait) {
     <div class="body-text">The Showcase website is currently offline for maintenance.</div>
     <div class="body-text">Missed these 2022 events?</div>
     <div id="logos" class="body-text">
-        <img src="/logos.png" />
+        <img src="logos.png" />
     </div>
     <div class="body-text">Please check back from 9th January for our 2023 calendar!</div>
     <div class="body-text">We are launching with some fantastic events, including The One & Only<br /> Designer Sale, Reiss, Aspinal of London and more!</div>
