@@ -8,9 +8,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
+        /* height: auto; */
         left: 50%;
-        max-height: 100%;
+        /* max-height: 100%; */
         max-width: 768px;
         min-height: 300px;
         overflow-y: auto;
@@ -25,14 +25,28 @@
         z-index: 10000;
 
         opacity: 1;
-        -webkit-transform: translateX(-50%) translateY(-50%) scale(1.25);
-        -moz-transform: translateX(-50%) translateY(-50%) scale(1.25);
-        -ms-transform: translateX(-50%) translateY(-50%) scale(1.25);
-        -o-transform: translateX(-50%) translateY(-50%) scale(1.25);
-        transform: translateX(-50%) translateY(-50%) scale(1.25);
+        -webkit-transform: translateX(-50%) translateY(-30%) scale(1.2);
+        -moz-transform: translateX(-50%) translateY(-30%) scale(1.2);
+        -ms-transform: translateX(-50%) translateY(-30%) scale(1.2);
+        -o-transform: translateX(-50%) translateY(-30%) scale(1.2);
+        transform: translateX(-50%) translateY(-30%) scale(1.2);
 
 
     }
+@media only screen
+and (max-device-width: 667px)
+/* and (-webkit-min-device-pixel-ratio: 2) */
+and (orientation: portrait) {
+ .cover {
+    -webkit-transform: translateX(-50%) translateY(-20%) scale(1.2);
+    -moz-transform: translateX(-50%) translateY(-20%) scale(1.2);
+    -ms-transform: translateX(-50%) translateY(-20%) scale(1.2);
+    -o-transform: translateX(-50%) translateY(-20%) scale(1.2);
+    transform: translateX(-50%) translateY(-20%) scale(1.2);
+    font-size: 2em;
+    line-height: 2em;
+ }
+}
 
     .cover .tagline {
         font-family: Montserrat, sans-serif;
@@ -66,6 +80,23 @@
         color: #242424;
         background-color: #fff;
         width: fit-content;
+    }
+    .body-text {
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        margin-top: 1.5em;
+        font-size: 0.78em;
+        padding: .4em 1em;
+        text-decoration: none;
+        transition: all ease .2s;
+        color: #242424;
+        /* background-color: #fff; */
+        width: fit-content;     
+    }
+    #logos img {
+        width: 70%;
     }
 </style>
 <title>Showcase</title>
@@ -114,7 +145,15 @@
 		c0.2,0,0.3,0.1,0.3,0.3V69C1866,69.2,1865.9,69.3,1865.7,69.3z"/></g></svg>
     </div>
     <h1 class="tagline">Luxury Sample Sales London</h1>
-    <a class="join" href="https://showcase.co">Become a member</a>
+    <!-- <a class="join" href="https://showcase.co">Become a member</a> -->
+    <div class="body-text">The Showcase website is currently offline for maintenance.</div>
+    <div class="body-text">Missed these 2022 events?</div>
+    <div id="logos" class="body-text">
+        <img src="/logos.png" />
+    </div>
+    <div class="body-text">Please check back from 9th January for our 2023 calendar!</div>
+    <div class="body-text">We are launching with some fantastic events, including The One & Only<br /> Designer Sale, Reiss, Aspinal of London and more!</div>
+    <div class="body-text">Contact us at: <a href="mailto:online@showcase.co">online@showcase.co</a> should you require any assistance.</div>
 </div>
 </body>
 </html>
